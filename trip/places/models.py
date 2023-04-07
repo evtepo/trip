@@ -9,6 +9,10 @@ class Hotels(models.Model):
 
     def __str__(self):
         return self.title
+    
+    class Meta:
+        verbose_name = 'Отель'
+        verbose_name_plural = 'Отели'
 
 
 class City(models.Model):
@@ -17,6 +21,10 @@ class City(models.Model):
 
     def __str__(self):
         return self.title
+    
+    class Meta:
+        verbose_name = 'Город'
+        verbose_name_plural = 'Города'
 
 
 class Country(models.Model):
@@ -24,3 +32,7 @@ class Country(models.Model):
 
     def __str__(self):
         return self.title
+    
+    class Meta:
+        verbose_name = 'Страна'
+        verbose_name_plural = 'Страны'
